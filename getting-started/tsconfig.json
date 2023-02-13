@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    // 모든 타입에 기본적으로 any라도 넣어야된다고 명시하는 옵션
+    "noImplicitAny": true
+  }
+}
