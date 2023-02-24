@@ -26,3 +26,9 @@ if ((tony as Developer).skill) {
 function isDeveloper(target: Developer | Person): target is Developer {
   return (target as Developer).skill !== undefined;
 }
+
+if (isDeveloper(tony)) {
+  tony.skill;
+} else {
+  tony.age;
+}
