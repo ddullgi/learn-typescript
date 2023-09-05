@@ -23,7 +23,7 @@ function fetchTodoItems(): Todo[] {
 }
 
 // crud methods
-function fetchTodos(): object[] {
+function fetchTodos(): Todo[] {
   const todos = fetchTodoItems();
   return todos;
 }
@@ -42,11 +42,11 @@ function completeTodo(index: number, todo: Todo): void {
 }
 
 // business logic
-function logFirstTodo(): object {
+function logFirstTodo(): Todo {
   return todoItems[0];
 }
 
-function showCompleted(): object[] {
+function showCompleted(): Todo[] {
   return todoItems.filter(item => item.done);
   // return todoItems.filter(function(item) {
   //   if (item.done) {
